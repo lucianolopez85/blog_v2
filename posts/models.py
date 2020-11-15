@@ -13,3 +13,7 @@ class Post(models.Model):
     categoria_post = models.ForeignKey(Categoria, on_delete=models.DO_NOTHING,blank=True, null=True)
     imagem_post = models.ImageField(upload_to='post_img/%Y/%m/%d', blank=True,null=True)
     publicado_post = models.BooleanField(default=False)
+
+
+    def __str__(self):
+        return self.titulo_post
