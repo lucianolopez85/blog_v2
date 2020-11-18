@@ -41,8 +41,10 @@ class PostBusca(PostIndex):
             Q(autor_post__first_name__iexact=termo) |
             Q(conteudo_post__icontains=termo) |
             Q(excerto_post__icontains=termo) |
-            Q(categoria_post__name_cat__iexact=termo)
+            Q(categoria_post__nome_cat__iexact=termo)
         )
+
+        return qs
 
 class PostCategoria(PostIndex): #sobre escrevendo a classe mãe PostIndex
     template_name = 'posts/post_categoria.html'
