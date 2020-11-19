@@ -5,9 +5,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'l=1-9!aln9ob4a($)1p77y_#8&kwxvjg@5c3vk3m62(r6c*s(v'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.230.139.131']
 
 INSTALLED_APPS = [
     'posts',
