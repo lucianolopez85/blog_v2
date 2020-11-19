@@ -22,17 +22,20 @@
 
         <div class="row pt-5">
             <div class="col-xl"></div>
+            
             <div class="col-xl-8">
 
                 {% if post.imagem_post %}
                 <img class="img-fluid pb-5 " src="{{ post.imagem_post.url }}" alt="{{ post.titulo_post }}">
                 {% endif %}
-
+                <div class="col-xl-8 text-center">
                 {{ post.conteudo_post|safe }}
+                </div>
 
             </div>
             <div class="col-xl"></div>
         </div>
+
 
         {% if comentarios %}
         <div class="row pt-5">
